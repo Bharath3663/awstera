@@ -4,5 +4,5 @@ bucket_region = "us-west-2"
 
 #routetable
 vpc_id = "aws_vpc.NEW.id"
-public_subnet_id = "your-public-subnet-id"
+public_subnet_id = "aws_subnet.Public-1.id"
 internet_gateway_id = "your-internet-gateway-id"
