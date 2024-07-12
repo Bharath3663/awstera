@@ -182,3 +182,21 @@ variable "ebs_volume_size" {
   description = "The size (in GiB) of the EBS volume to create for the AMI."
   default = 10
 }
+
+#route table
+variable "vpc_id" {
+  type = string
+}
+
+variable "public_subnet_id" {
+  type = string
+}
+
+variable "internet_gateway_id" {
+  type = string
+}
+
+variable "route_table_name" {
+  type = string
+  default = "root"
+}
