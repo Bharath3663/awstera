@@ -186,14 +186,18 @@ variable "ebs_volume_size" {
 #route table
 variable "vpc_id" {
   type = string
+  description = ""
 }
 
 variable "public_subnet_id" {
   type = string
+  description = ""
+  
 }
 
 variable "internet_gateway_id" {
   type = string
+  description = ""
 }
 
 variable "route_table_name" {
