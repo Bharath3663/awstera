@@ -197,7 +197,7 @@ variable "public_subnet_id" {
 
 variable "internet_gateway_id" {
   type = string
-  description = ""
+  description = "aws_internet_gateway.gw.id"
 }
 
 variable "route_table_name" {
