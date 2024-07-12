@@ -186,7 +186,7 @@ variable "ebs_volume_size" {
 #route table
 variable "vpc_id" {
   type = string
-  description = ""
+  description = "aws_vpc.NEW.id"
 }
 
 variable "public_subnet_id" {
