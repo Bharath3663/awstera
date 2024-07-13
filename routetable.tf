@@ -1,5 +1,5 @@
 resource "aws_route_table" "root" {
-  vpc_id = var.vpc_id
+  vpc_id = aws_vpc.NEW.id
   tags = {
     Name = var.route_table_name
   }
