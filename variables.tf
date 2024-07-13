@@ -189,6 +189,7 @@ variable "route_table_name" {
   default = "root"
 }
 #cloudwatch
-variable "my-log" {
+variable "log_group_name" {
   type = string
+  description = "my-log"
 }
