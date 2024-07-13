@@ -6,7 +6,7 @@ resource "aws_route_table" "root" {
 }
 
 resource "aws_route_table_association" "public_subnet_association" {
-  subnet_id = var.public_subnet_id
+  subnet_id = aws_subnet.Public-1.id
   route_table_id = aws_route_table.root.id
 }
 
