@@ -184,25 +184,6 @@ variable "ebs_volume_size" {
 }
 
 #route table
-variable "vpc_id" {
-  type = string
-  description = "This is vpc id "
-  default = aws_vpc.NEW.id
-}
-
-variable "public_subnet_id" {
-  type = string
-  description = "This is public subnet id"
-  default = aws_subnet.Public-1.id
-  
-}
-
-variable "internet_gateway_id" {
-  type = string
-  description = "This is internetgateway id"
-  default = aws_internet_gateway.gw.id
-}
-
 variable "route_table_name" {
   type = string
   default = "root"
