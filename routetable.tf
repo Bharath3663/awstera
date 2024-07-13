@@ -11,6 +11,6 @@ resource "aws_route_table_association" "public_subnet_association" {
 }
 
 resource "aws_route_table_association" "internet_gateway_association" {
-  gateway_id = var.internet_gateway_id
+  gateway_id = aws_internet_gateway.gw.id
   route_table_id = aws_route_table.root.id
 }
