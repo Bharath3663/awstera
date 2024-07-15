@@ -198,7 +198,7 @@ variable "log_group_name" {
 #route53
 variable "domain_name" {
   description = "The domain name for the Route53 zone"
-  default = "example.com"
+  default = "bharath.com"
 }
 
 variable "record_name" {
