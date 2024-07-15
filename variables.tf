@@ -196,16 +196,16 @@ variable "log_group_name" {
 }
 
 #route53
-#variable "domain_name" {
- # description = "The domain name for the Route53 zone"
- # default = "example.com"
-#}
+variable "domain_name" {
+  description = "The domain name for the Route53 zone"
+  default = "example.com"
+}
 
-#variable "record_name" {
-  #description = "The subdomain for the A record (e.g., www)"
-  #default = "www"
-#}
+variable "record_name" {
+  description = "The subdomain for the A record (e.g., www)"
+  default = "www"
+}
 
-#variable "record_ip" {
-  #description = "The IP address for the A record"
-#}
+variable "record_ip" {
+  description = "The IP address for the A record"
+}
