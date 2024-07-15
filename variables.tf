@@ -207,5 +207,5 @@ variable "record_name" {
 }
 
 variable "record_ip" {
-  description = "The IP address for the A record"
+  description = "3.226.70.137"
 }
