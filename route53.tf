@@ -7,6 +7,6 @@ resource "aws_route53_record" "www" {
   zone_id = aws_route53_zone.primary.zone_id
   name    = var.record_name
   type    = "A"
-  ttl     = 300  # Time to live in seconds
+  ttl     = 300
   records = [var.record_ip]
 }
